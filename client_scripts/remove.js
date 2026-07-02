@@ -33,4 +33,5 @@ RecipeViewerEvents.removeEntries('item', event => {
   event.remove('mcwbyg:windswept_sandstone_bridge_stair')
   event.remove('mcwbyg:windswept_sandstone_bridge_pier')
   event.remove('mcwbyg:windswept_sandstone_bridge')
+  event.remove('trafficcraft:iron_plate')
 })

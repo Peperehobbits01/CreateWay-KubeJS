@@ -6,6 +6,19 @@ ServerEvents.recipes(event => {
 
     const AdornCopper = 'adorn:copper_nugget'
 
-    event.remove({ input: AdornCopper })
+    event.replaceInput(
+        { input: AdornCopper },
+        AdornCopper,
+        Ingredient.of('create:copper_nugget')
+    )
     event.remove({ output: AdornCopper })
+
+    const IronPlate = 'trafficcraft:iron_plate'
+
+    event.replaceInput(
+        { input: IronPlate },
+        IronPlate,
+        Ingredient.of('create:iron_sheet')
+    )
+    event.remove({ output: IronPlate })
 })
