@@ -44,10 +44,30 @@ StartupEvents.modifyCreativeTab('adorn:items', event => {
     event.remove('adorn:copper_nugget')
 })
 
+StartupEvents.modifyCreativeTab('skd:blocks_and_items', event => {
+    event.remove('skd:copper_nugget')
+})
+
+StartupEvents.modifyCreativeTab('tfmg:tfmg_main', event => {
+    event.remove('tfmg:steel_nugget')
+    event.remove('tfmg:steel_ingot')
+    event.remove('tfmg:steel_block')
+})
+
+StartupEvents.modifyCreativeTab('stellaris:stellaris', event => {
+    event.remove('stellaris:steel_ingot')
+    event.remove('stellaris:steel_nugget')
+    event.remove('stellaris:steel_block')
+})
+
 StartupEvents.modifyCreativeTab('minecraft:ingredients', event => {
     event.remove('adorn:copper_nugget')
 })
 
 StartupEvents.modifyCreativeTab('trafficcraft:trafficcrafttab', event => {
     event.remove('trafficcraft:iron_plate')
+})
+
+StartupEvents.modifyCreativeTab('create_connected:main', event => {
+    event.remove('create_connected:copycat_stairs')
 })
