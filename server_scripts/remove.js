@@ -3,7 +3,12 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'vinery:dirt_slab' })
     event.remove({ output: 'vinery:dirt_path_slab' })
     event.remove({ output: 'vinery:grass_slab' })
-    event.remove({ output: 'create_connected:copycat_stairs ' })
+    event.remove({ output: 'create_connected:copycat_stairs' })
+    event.remove({ output: 'stellaris:steel_sword' })
+    event.remove({ output: 'stellaris:steel_pickaxe' })
+    event.remove({ output: 'stellaris:steel_axe' })
+    event.remove({ output: 'stellaris:steel_shovel' })
+    event.remove({ output: 'stellaris:steel_hoe' })
 
     const AdornCopper = 'adorn:copper_nugget'
 
@@ -50,33 +55,6 @@ ServerEvents.recipes(event => {
     )
     event.remove({ output: StellarisSteelBlock })
 
-    const TFMGSteelNugget = 'tfmg:steel_nugget'
-
-    event.replaceInput(
-        { input: TFMGSteelNugget },
-        TFMGSteelNugget,
-        Ingredient.of('create_ironworks:steel_nugget')
-    )
-    event.remove({ output: TFMGSteelNugget })
-
-    const TFMGSteelIngot = 'tfmg:steel_ingot'
-
-    event.replaceInput(
-        { input: TFMGSteelIngot },
-        TFMGSteelIngot,
-        Ingredient.of('create_ironworks:steel_ingot')
-    )
-    event.remove({ output: TFMGSteelIngot })
-
-    const TFMGSteelBlock = 'tfmg:steel_block'
-
-    event.replaceInput(
-        { input: TFMGSteelBlock },
-        TFMGSteelBlock,
-        Ingredient.of('create_ironworks:steel_block')
-    )
-    event.remove({ output: TFMGSteelNugget })
-
     const IronPlate = 'trafficcraft:iron_plate'
 
     event.replaceInput(
@@ -85,4 +63,13 @@ ServerEvents.recipes(event => {
         Ingredient.of('create:iron_sheet')
     )
     event.remove({ output: IronPlate })
+
+    const Rope = 'supplementaries:rope'
+
+    event.replaceInput(
+        { input: Rope },
+        Rope,
+        Ingredient.of('farmersdelight:rope')
+    )
+    event.remove({ output: Rope })
 })

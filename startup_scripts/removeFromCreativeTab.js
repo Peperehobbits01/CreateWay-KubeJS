@@ -48,20 +48,29 @@ StartupEvents.modifyCreativeTab('skd:blocks_and_items', event => {
     event.remove('skd:copper_nugget')
 })
 
-StartupEvents.modifyCreativeTab('tfmg:tfmg_main', event => {
-    event.remove('tfmg:steel_nugget')
-    event.remove('tfmg:steel_ingot')
-    event.remove('tfmg:steel_block')
-})
-
 StartupEvents.modifyCreativeTab('stellaris:stellaris', event => {
     event.remove('stellaris:steel_ingot')
     event.remove('stellaris:steel_nugget')
     event.remove('stellaris:steel_block')
+    event.remove('stellaris:steel_sword')
+    event.remove('stellaris:steel_pickaxe')
+    event.remove('stellaris:steel_axe')
+    event.remove('stellaris:steel_shovel')
+    event.remove('stellaris:steel_hoe')
+})
+
+StartupEvents.modifyCreativeTab('stellaris:stellaris_blocks', event => {
+    event.remove('stellaris:steel_ore')
+    event.remove('stellaris:deepslate_steel_ore')
+    event.remove('stellaris:moon_steel_ore')
 })
 
 StartupEvents.modifyCreativeTab('minecraft:ingredients', event => {
     event.remove('adorn:copper_nugget')
+})
+
+StartupEvents.modifyCreativeTab('minecraft:functional_blocks', event => {
+    event.remove('supplementaries:rope')
 })
 
 StartupEvents.modifyCreativeTab('trafficcraft:trafficcrafttab', event => {
