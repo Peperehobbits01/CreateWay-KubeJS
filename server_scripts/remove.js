@@ -63,13 +63,4 @@ ServerEvents.recipes(event => {
         Ingredient.of('create:iron_sheet')
     )
     event.remove({ output: IronPlate })
-
-    const Rope = 'supplementaries:rope'
-
-    event.replaceInput(
-        { input: Rope },
-        Rope,
-        Ingredient.of('farmersdelight:rope')
-    )
-    event.remove({ output: Rope })
 })

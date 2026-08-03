@@ -49,5 +49,4 @@ RecipeViewerEvents.removeEntries('item', event => {
   event.remove('mcwbyg:windswept_sandstone_bridge')
   event.remove('trafficcraft:iron_plate')
   event.remove('create_connected:copycat_stairs')
-  event.remove('supplementaries:rope')
 })

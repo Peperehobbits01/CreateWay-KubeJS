@@ -69,10 +69,6 @@ StartupEvents.modifyCreativeTab('minecraft:ingredients', event => {
     event.remove('adorn:copper_nugget')
 })
 
-StartupEvents.modifyCreativeTab('minecraft:functional_blocks', event => {
-    event.remove('supplementaries:rope')
-})
-
 StartupEvents.modifyCreativeTab('trafficcraft:trafficcrafttab', event => {
     event.remove('trafficcraft:iron_plate')
 })
