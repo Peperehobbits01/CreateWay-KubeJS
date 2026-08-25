@@ -71,8 +71,23 @@ StartupEvents.modifyCreativeTab('minecraft:ingredients', event => {
 
 StartupEvents.modifyCreativeTab('trafficcraft:trafficcrafttab', event => {
     event.remove('trafficcraft:iron_plate')
+    event.remove('trafficcraft:hammer')
 })
 
 StartupEvents.modifyCreativeTab('create_connected:main', event => {
     event.remove('create_connected:copycat_stairs')
+    event.remove('create_connected:copycat_slab')
+    event.remove('create_connected:copycat_block')
+    event.remove('create_connected:copycat_beam')
+    event.remove('create_connected:copycat_vertical_step')
+    event.remove('create_connected:copycat_fence')
+    event.remove('create_connected:copycat_fence_gate')
+    event.remove('create_connected:copycat_wall')
+    event.remove('create_connected:copycat_board')
+    event.remove('create_connected:copycat_box')
+    event.remove('create_connected:copycat_catwalk')
+})
+
+StartupEvents.modifyCreativeTab('farmersdelight:farmersdelight', event => {
+    event.remove('farmersdelight:rope')
 })

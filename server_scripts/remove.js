@@ -4,11 +4,23 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'vinery:dirt_path_slab' })
     event.remove({ output: 'vinery:grass_slab' })
     event.remove({ output: 'create_connected:copycat_stairs' })
+    event.remove({ output: 'create_connected:copycat_slab' })
+    event.remove({ output: 'create_connected:copycat_block' })
+    event.remove({ output: 'create_connected:copycat_beam' })
+    event.remove({ output: 'create_connected:copycat_vertical_step' })
+    event.remove({ output: 'create_connected:copycat_fence' })
+    event.remove({ output: 'create_connected:copycat_fence_gate' })
+    event.remove({ output: 'create_connected:copycat_wall' })
+    event.remove({ output: 'create_connected:copycat_board' })
+    event.remove({ output: 'create_connected:copycat_box' })
+    event.remove({ output: 'create_connected:copycat_catwalk' })
     event.remove({ output: 'stellaris:steel_sword' })
     event.remove({ output: 'stellaris:steel_pickaxe' })
     event.remove({ output: 'stellaris:steel_axe' })
     event.remove({ output: 'stellaris:steel_shovel' })
     event.remove({ output: 'stellaris:steel_hoe' })
+    event.remove({ output: 'trafficcraft:hammer' })
+    event.remove({ input: 'trafficcraft:hammer' })
 
     const AdornCopper = 'adorn:copper_nugget'
 
@@ -63,4 +75,18 @@ ServerEvents.recipes(event => {
         Ingredient.of('create:iron_sheet')
     )
     event.remove({ output: IronPlate })
+
+    const Rope = 'farmersdelight:rope'
+
+    event.replaceInput(
+        { input: Rope },
+        Rope,
+        Ingredient.of('supplementaries:rope')
+    )
+
+    event.replaceOutput(
+        { input: Rope },
+        Rope,
+        Ingredient.of('supplementaries:rope')
+    )
 })
