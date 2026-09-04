@@ -21,33 +21,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'stellaris:steel_hoe' })
     event.remove({ output: 'trafficcraft:hammer' })
     event.remove({ input: 'trafficcraft:hammer' })
-    event.remove({ output: 'create_new_age:magnetite_block'})
-    event.remove({ output: 'create_new_age:redstone_magnet'})
-    event.remove({ output: 'create_new_age:layered_magnet'})
-    event.remove({ output: 'create_new_age:fluxuated_magnetite'})
-    event.remove({ output: 'create_new_age:netherite_magnet'})
-    event.remove({ output: 'create_new_age:basic_motor'})
-    event.remove({ output: 'create_new_age:advanced_motor'})
-    event.remove({ output: 'create_new_age:reinforced_motor'})
-    event.remove({ output: 'create_new_age:basic_motor_extension'})
-    event.remove({ output: 'create_new_age:advanced_motor_extension'})
-    event.remove({ output: 'create_new_age:stirling_engine'})
-    event.remove({ output: 'create_new_age:copper_wire_block'})
-    event.remove({ output: 'create_new_age:overcharged_iron_wire_block'})
-    event.remove({ output: 'create_new_age:overcharged_golden_wire_block'})
-    event.remove({ output: 'create_new_age:overcharged_diamond_wire_block'})
-    event.remove({ output: 'create_new_age:overcharged_diamond_wire'})
-    event.remove({ output: 'create_new_age:overcharged_golden_wire'})
-    event.remove({ output: 'create_new_age:overcharged_iron_wire'})
-    event.remove({ output: 'create_new_age:copper_wire'})
-    event.remove({ output: 'create_new_age:blank_circuit'})
-    event.remove({ output: 'create_new_age:copper_circuit'})
-    event.remove({ output: 'create_new_age:overcharged_iron_sheet'})
-    event.remove({ output: 'create_new_age:overcharged_golden_sheet'})
-    event.remove({ output: 'create_new_age:generator_coil'})
-    event.remove({ output: 'create_new_age:electrical_connector'})
-    event.remove({ output: 'create_new_age:carbon_brushes'})
-
 
     const AdornCopper = 'adorn:copper_nugget'
 
@@ -115,13 +88,5 @@ ServerEvents.recipes(event => {
         { input: Rope },
         Rope,
         Ingredient.of('supplementaries:rope')
-    )
-
-    const ElectricalConnector = 'create_new_age:electrical_connector'
-
-    event.replaceInput(
-        { input: ElectricalConnector },
-        ElectricalConnector,
-        Ingredient.of('powergrid:device_connector')
     )
 })
