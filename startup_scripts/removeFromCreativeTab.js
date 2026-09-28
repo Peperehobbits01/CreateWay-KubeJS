@@ -91,3 +91,21 @@ StartupEvents.modifyCreativeTab('create_connected:main', event => {
 StartupEvents.modifyCreativeTab('farmersdelight:farmersdelight', event => {
     event.remove('farmersdelight:rope')
 })
+
+StartupEvents.modifyCreativeTab('create_sa:create_stuff_additions_tab', event => {
+    event.remove('create_sa:copper_helmet')
+    event.remove('create_sa:copper_chestplate')
+    event.remove('create_sa:copper_leggings')
+    event.remove('create_sa:copper_boots')
+    event.remove('create_sa:brass_helmet')
+    event.remove('create_sa:brass_chestplate')
+    event.remove('create_sa:brass_leggings')
+    event.remove('create_sa:brass_boots')
+})
+
+StartupEvents.modifyCreativeTab('create_ironworks:create_ironworks', event => {
+    event.remove('create_ironworks:copper_armor_helmet')
+    event.remove('create_ironworks:copper_armor_chestplate')
+    event.remove('create_ironworks:copper_armor_leggings')
+    event.remove('create_ironworks:copper_armor_boots')
+})
