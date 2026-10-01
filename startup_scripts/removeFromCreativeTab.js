@@ -101,6 +101,16 @@ StartupEvents.modifyCreativeTab('create_sa:create_stuff_additions_tab', event =>
     event.remove('create_sa:brass_chestplate')
     event.remove('create_sa:brass_leggings')
     event.remove('create_sa:brass_boots')
+    event.remove('create_sa:copper_sword')
+    event.remove('create_sa:copper_pickaxe')
+    event.remove('create_sa:copper_axe')
+    event.remove('create_sa:copper_shovel')
+    event.remove('create_sa:copper_hoe')
+    event.remove('create_sa:brass_sword')
+    event.remove('create_sa:brass_pickaxe')
+    event.remove('create_sa:brass_axe')
+    event.remove('create_sa:brass_shovel')
+    event.remove('create_sa:brass_hoe')
 })
 
 StartupEvents.modifyCreativeTab('create_ironworks:create_ironworks', event => {
@@ -108,4 +118,10 @@ StartupEvents.modifyCreativeTab('create_ironworks:create_ironworks', event => {
     event.remove('create_ironworks:copper_armor_chestplate')
     event.remove('create_ironworks:copper_armor_leggings')
     event.remove('create_ironworks:copper_armor_boots')
+})
+
+StartupEvents.modifyCreativeTab('createnuclear:main', event => {
+    event.remove('createnuclear:steel_nugget')
+    event.remove('createnuclear:steel_ingot')
+    event.remove('createnuclear:steel_block')
 })

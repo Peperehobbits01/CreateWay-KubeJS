@@ -45,6 +45,26 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'create_sa:brass_chestplate' })
     event.remove({ output: 'create_sa:brass_leggings'})
     event.remove({ output: 'create_sa:brass_boots'})
+    event.remove({ input: 'create_sa:copper_sword'})
+    event.remove({ input: 'create_sa:copper_pickaxe'})
+    event.remove({ input: 'create_sa:copper_axe'})
+    event.remove({ input: 'create_sa:copper_shovel'})
+    event.remove({ input: 'create_sa:copper_hoe'})
+    event.remove({ output: 'create_sa:copper_hoe'})
+    event.remove({ output: 'create_sa:copper_shovel'})
+    event.remove({ output: 'create_sa:copper_axe'})
+    event.remove({ output: 'create_sa:copper_pickaxe'})
+    event.remove({ output: 'create_sa:copper_sword'})
+    event.remove({ input: 'create_sa:brass_sword'})
+    event.remove({ input: 'create_sa:brass_pickaxe'})
+    event.remove({ input: 'create_sa:brass_axe'})
+    event.remove({ input: 'create_sa:brass_shovel'})
+    event.remove({ input: 'create_sa:brass_hoe'})
+    event.remove({ output: 'create_sa:brass_hoe'})
+    event.remove({ output: 'create_sa:brass_shovel'})
+    event.remove({ output: 'create_sa:brass_axe'})
+    event.remove({ output: 'create_sa:brass_pickaxe'})
+    event.remove({ output: 'create_sa:brass_sword'})
 
     const AdornCopper = 'adorn:copper_nugget'
 
@@ -113,4 +133,31 @@ ServerEvents.recipes(event => {
         Rope,
         Ingredient.of('supplementaries:rope')
     )
+
+    const SteelNugget = 'createnuclear:steel_nugget'
+
+    event.replaceInput(
+        { input: SteelNugget },
+        SteelNugget,
+        Ingredient.of('create_ironworks:steel_nugget')
+    )
+    event.remove({ output: SteelNugget })
+
+    const SteelBlock = 'createnuclear:steel_block'
+
+    event.replaceInput(
+        { input: SteelBlock },
+        SteelBlock,
+        Ingredient.of('create_ironworks:steel_block')
+    )
+    event.remove({ output: SteelBlock })
+
+    const SteelIngot = 'createnuclear:steel_ingot'
+
+    event.replaceInput(
+        { input: SteelIngot },
+        SteelIngot,
+        Ingredient.of('create_ironworks:steel_ingot')
+    )
+    event.remove({ output: SteelIngot })
 })
