@@ -65,6 +65,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'create_sa:brass_axe'})
     event.remove({ output: 'create_sa:brass_pickaxe'})
     event.remove({ output: 'create_sa:brass_sword'})
+    event.remove({ output: 'createnuclear:coal_dust'})
 
     const AdornCopper = 'adorn:copper_nugget'
 

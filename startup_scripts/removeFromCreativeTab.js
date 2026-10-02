@@ -124,4 +124,5 @@ StartupEvents.modifyCreativeTab('createnuclear:main', event => {
     event.remove('createnuclear:steel_nugget')
     event.remove('createnuclear:steel_ingot')
     event.remove('createnuclear:steel_block')
+    event.remove('createnuclear:coal_dust')
 })
